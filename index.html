@@ -3,51 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mood Playlist</title>
+    <title>MOODS | Playlist Generator based on mood</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Instrument+Serif:ital@0;1&family=Monoton&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#f5f5f5]">
-    <header class="border-b border-b-[3px] border-indigo-700 pt-[30px]">
-        <nav class="flex justify-between items-end px-4">
-            <div></div>
-            <div>
-                <a href="#" class="px-2 instrument-serif-regular"> Get started</a>
-                <a href="#" class="px-2 instrument-serif-regular"> About</a>
-                <a href="#" class="px-2 instrument-serif-regular"> Help</a>
+<body>
+    <header>
+        <div class="first-container jetbrains-mono-mood">
+            <div><p>SYSTEM.V1.01</p></div>
+            <div><p>MOODS ARCHIVE - GLOBAL DIRECTORY</p></div>
+            <div><p>TIMESTAMP: 2026.08.19_20:41 </p></div>
+            <div><p>LOCAL: NIGERIA/NE</p></div>
+        </div>
+        <div class="second-container">
+            <div class="inner-container">
+                <h3 class="inner-heading jetbrains-mono-mood">ABOUT US</h3>
+                <p class="inner-p inter-mood">The MOOD Archive is a curated music playlist that gives you playlist recommendations based on how you feel at the moment.</p>
             </div>
-        </nav>
+            <div class="inner-container">
+                <h3 class="inner-heading jetbrains-mono-mood">METHODOLOGY</h3>
+                <p class="inner-p inter-mood">Each playlist is pulled from Spotify after a series of questions are answered by the user. To discover your playlist, you have to log in and take the 4 part questionnaire and let the curation begin.</p>
+            </div>
+            <div class="inner-container">
+                <h3 class="inner-heading jetbrains-mono-mood">CURATION</h3>
+                <p class="inner-p inter-mood">Total Tracks: 10</p>
+            </div>
+            <div class="inner-container" id="black-box">
+            </div>
+        </div>
+        <div class="third-container">
+            <p class="archivo-black-regular">MOODS.</p>
+        </div>
     </header>
-    <main>
-        <div class="flex flex-col pl-[550px] mt-[20px]">
-            <h1 class="monoton-regular text-6xl">Mood</h1>
-            <h2 class="pl-[10px] instrument-serif-regular text-6xl">Playlist</h2>
-        </div>
-        <div class="flex flex-col w-[70%] mx-auto my-[20px] py-4">
-            <h1 class="text-center w-[90%] py-10 text-6xl font-black mx-auto instrument-serif-regular">Mood playlist generator personalised to your taste</h1>
-            <div class="text-left w-[90%] text-xl py-4 mx-auto px-10 instrument-serif-regular">
-                <p class="py-4 mx-auto">Are you tired of choosing between a playlist 
-                that suits your mood, and a playlist that’s personalised to your music taste? Enter your mood and 5 favourite artists and
-                 MOOD Playlist will create a Spotify playlist you’ll love.
-                </p>
-                <p class="py-4 mx-auto">MOOD Playlist is a mood playlist generator, 
-                that is creates Spotify playlists that are personalised to both your mood and your unique music taste, in just a few clicks.
-                </p>
-                <p class="py-4 mx-auto">Use the mood profiler to define the mood for 
-                your playlist, then select five of your favourite artists from your Spotify listening history, and MOOD Playlist’s clever
-                 personalisation technology will make a customised playlist just for you.
-                </p>
-                <p class="py-4 mx-auto">Click the button below to get started with 
-                the MOOD Playlist generator.
-                </p>
-            </div>
-            <div class="w-[80%] mx-auto instrument-serif-regular">
-                <button class="py-2 w-full montserrat-regular uppercase text-xl bg-indigo-900 rounded-full text-[#f5f5f5] hover:border hover:border-[3px] hover:text-indigo-700 hover:border-indigo-700 hover:bg-transparent transition-all duration-300 ease-in-out hover:scale-[1.02]">Create your playlist</button>
-            </div>
-        </div>
-    </main>
+    
 </body>
 </html>

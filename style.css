@@ -1,13 +1,96 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
+
+.jetbrains-mono-mood {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.instrument-serif-regular {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
+
+.inter-mood {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
+}
+
+header {
+  background-color: #e6e6e6;
+  /* padding: 0 15px; */
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  position: sticky;
+  background-color: #e6e6e6;
+  top: 0;
+  z-index: 20;
+}
+
+.first-container div{
+   font-size: 10px;
+   margin: 10px 12px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 60px auto;
+  padding-left: 10px;
+}
+
+.inner-container {
+  border-top: 1px solid #a8a7a7;
+  padding: 5px 5px 10px 0;
+  width: 20%;
+}
+
+.inner-container h3{
+  color: #a8a7a7;
+  font-size: 10px;
+  padding: 5px 0;
+}  
+
+.inner-container p{
+  font-size: 12px;
+}
+
+#black-box {
+  height: 100%;
+  background-color: black;
+  margin-right: 10px;
+}
+/* will add black grids in the black box after finishing the landing page */
+
+.third-container {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin: 10px 20px;
+}
+
+.third-container p{
+  font-size: 250px;
+  line-height: 0.75; 
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block;
+  letter-spacing: -0.07em;
 }
