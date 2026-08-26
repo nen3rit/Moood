@@ -54,7 +54,7 @@ header {
   justify-content: space-between;
   width: 100%;
   margin: 60px auto;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 
 .inner-container {
@@ -76,14 +76,14 @@ header {
 #black-box {
   height: 100%;
   background-color: black;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 /* will add black grids in the black box after finishing the landing page */
 
 .third-container {
   border-top: 1px solid black;
   padding-top: 10px;
-  margin: 10px 20px;
+  margin: 30px 20px;
 }
 
 .third-container p{
@@ -93,4 +93,192 @@ header {
   padding-bottom: 0;
   display: block;
   letter-spacing: -0.07em;
+  /* transform: translateX(3.6px); */
+}
+/* HEADER ENDS */
+/* MAIN BEGINS */
+main {
+  margin: 10px 12px;
+}
+
+#first-section {
+  margin-top: 100px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#pulse {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  /* PULSE ANIMATION */
+	animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50%{
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#first-section h3{
+  padding-left: 7px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.table-title{
+  margin: 10px 0;
+}
+
+.table-title p{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.table {
+  /* border: 1px solid black; */
+  margin: 25px auto;
+}
+
+.t-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+
+.t-header p{
+  color: #a8a7a7;
+  font-size: 10px;
+}
+
+.sub-header{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+#special-spacing{
+  gap: 20em;
+}
+
+.t-body {
+  margin: 0 0 10px 0;
+}
+
+.t-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  width: 100%;
+  padding: 10px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.t-row:hover{
+  background-color: #f1f1f1;
+  transition: 1s;
+}
+
+#text-spacing {
+  display: flex;
+  flex-direction: row;
+}
+
+#color-block{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(66, 4, 92);
+  padding: 0 2px 0 0;
+}
+
+#duration-txt {
+  font-size: 15px;
+}
+
+#tags {
+  margin-left: 95px;
+}
+
+#tags a{
+  text-decoration: none;
+  color: #a8a7a7;
+  font-size: 10px;
+}
+
+#tags a:hover{
+  color: black;
+  text-decoration: underline;
+  transition: 1s;
+}
+/* testing hover effect */
+/* #tags a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor; 
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+} */
+
+/* Expand outward on hover */
+/* #tags a:hover::after {
+  transform: scaleX(1);
+} */
+/* hover effect ends */
+
+/* FOOTER AREA */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 20px 12px;
+}
+
+.link-tab{
+  display: flex;
+  flex-direction: column;
+}
+
+.link-tab h3{
+  color: #a8a7a7;
+  font-size: 10px;
+  padding: 5px 0;
+}
+
+.link-tab a{
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.link-tab a:hover{
+  color: #a8a7a7;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+
+.link-tab p{
+  font-size: 12px;
+  padding: 5px 0;
 }
